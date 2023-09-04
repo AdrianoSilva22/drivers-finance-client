@@ -1,14 +1,16 @@
-import { User } from "@/models/usuario";
+import { Usuario } from "@/models/usuario";
 import { apiService } from "./apiService";
 
 export const cadastroService = () => {
 
     const url = "/cadastro"
 
-    const cadastrarUsuario = (usuario: User) => {
-        apiService.post(`${url}`, usuario)
+    const cadastrarUsuario = (usuario: Usuario) => {
+        return apiService.post(`${url}`, usuario)
     }
 
-    return {cadastrarUsuario}
+    return {
+        cadastrarUsuario
+    }
 }
 
