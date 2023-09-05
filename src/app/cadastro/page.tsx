@@ -1,6 +1,6 @@
 'use client'
 
-import { mensagemErro, mensagemSucesso } from "@/models/toast"
+import { mensagemErro, mensagemSucesso } from "@/models/toastr"
 import { Usuario, valorInicialUsuario } from "@/models/usuario"
 import { cadastroService } from "@/service/cadastroService"
 import { useState } from "react"
