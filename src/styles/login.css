@@ -135,3 +135,7 @@ button {
     background-color: #3333332a;
     margin-top: 15px;
 }
+
+button:hover{
+    background-color: #3333331f;
+}

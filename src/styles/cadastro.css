@@ -133,3 +133,7 @@ button {
     border: 1px solid #ccc;
     background-color: #3333332a;
 }
+
+button:hover{
+    background-color: #3333331f;
+}
