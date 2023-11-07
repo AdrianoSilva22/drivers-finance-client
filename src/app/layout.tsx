@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}
-        <footer className="foooter">
+        {/* <footer className="foooter">
           <div className='p'>
           <div className="PRINCIPAL">
             <div className="division1">
@@ -45,7 +45,7 @@ export default function RootLayout({
             </div>
           </div>
           </div>
-        </footer>
+        </footer> */}
       </body>
     </html>
   )

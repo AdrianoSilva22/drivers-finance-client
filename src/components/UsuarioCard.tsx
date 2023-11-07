@@ -1,16 +1,20 @@
-import { Usuario } from "@/models/usuario";
-import '@/styles/usuarioCard.css';
+import { Usuario } from "@/models/usuario"
+import "@/styles/usuarioCard.css"
 
-export function UsuarioCard(props: Usuario) {
+interface UsuarioCardProps {
+    usuario: Usuario
+}
 
+export function UsuariooCard({ usuario }: UsuarioCardProps) {
     return (
+
         <div className="div-card-container">
             <ul>
-                <li>Login: {props.login}</li>
-                <li>Nome: {props.nome}</li>
-                <li>Email: {props.email}</li>
-                <li>Senha: {props.senha}</li>
-                <li>Gênero: {props.genero}</li>
+                <li>Nome: {usuario.nome}</li>
+                <li>Email: {usuario.email}</li>
+                <li>Login: {usuario.login}</li>
+                <li>Senha: {usuario.senha}</li>
+                <li>Gênero: {usuario.genero}</li>
             </ul>
         </div>
     )
