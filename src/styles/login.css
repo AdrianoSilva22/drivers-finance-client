@@ -1,141 +1,199 @@
-/* body {
-    width: 100%;
-    height: 100vh;
-
+.main-div {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.central {
-    width: 100%;
-    height: 100vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.Principal {
+#titulo {
+    width: 75%;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin-right: 25%;
+    margin-bottom: 10%;
+
+    white-space: nowrap;
+}
+
+#textMotivation {
+    font-size: 16px;
+}
+
+#description-project-title {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    width: 50%;
+}
+
+#img-glob {
+    position: absolute;
+    top: 14%;
+    left: 54.5%;
+}
+
+.secondary-div {
     display: flex;
+    width: 75vw;
+    height: 98vh;
+}
+
+.link-login-create {
+    display: flex;
+    gap: 10%;
+    margin-right: 50%;
+
+    width: 14%;
+    padding: 3%;
+    white-space: nowrap;
+}
+
+.link-login-create a {
+    color: rgb(115, 111, 117);
+}
+
+#right_title {
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+.left-div {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-
-
+    padding: 3%;
     width: 50%;
     height: 100%;
-    margin-top: 10px;
-    margin-bottom: 60px;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    width: 100%;
-
-    font-size: 30px;
-
-    color: #ccccccfb;
-}
-
-.detalhes {
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1px;
-}
-
-.linha-horizontal {
-    border-bottom: 1px solid #ccc;
-    width: 80%;
-
-
-    margin-bottom: 7%;
-}
-
-.secundaria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    background-color: white;
-    border-radius: 15px;
-    width: 70%;
-    height: 100%;
-}
-
-.terciaria {
-
-    width: 80%;
-    height: 65%;
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 1px;
-}
-
-input {
-    width: 90%;
-    height: 1%;
-    padding: 10px;
-
     border-radius: 5px;
+    box-sizing: border-box;
+
+    background-color: rgb(32, 32, 36);
+}
+
+.left-div input {
+
+    width: 75%;
+    height: 8%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(18, 18, 20);
+    color: white;
+    text-align: left;
+    font-size: 17px;
+
+    margin-bottom: 2vh;
+}
+
+.left-div button {
+    width: 76%;
+    height: 8%;
+
+    margin-top: 15vh;
+    border: none;
+    border-radius: 5px;
+
+    background-color: rgb(130, 87, 229);
+    color: white;
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.left-div select {
+    width: 75.6%;
+    height: 8%;
+    border: none;
+    border-radius: 5px;
+
+    background-color: rgb(18, 18, 20);
+    color: rgb(117, 117, 117);
+    font-size: 17px;
+}
+
+.right-div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 12%;
+    width: 50%;
+    height: 100%;
+    gap: 6vh;
+
+}
+
+@media (max-width: 768px) {
+    .secondary-div {
+        width: 75vw;
+        height: 98vh;
+    }
+
+    .left-div button {
+        width: 50%;
+        height: 7%;
+
+        margin-top: 15vh;
+
+        background-color: rgb(130, 87, 229);
+        color: white;
+        font-size: 13px;
+    }
+
+    .left-div select {
+        width: 77.6%;
+        height: 8%;
+
+        font-size: 13px;
+
+    }
+
+    .left-div input {
+
+        width: 75%;
+        height: 8%;
+
+        font-size: 13px;
+
+}
+
+.link-login-create {
+    width: 14%;
+
+    padding: 3%;
+    gap: 10%;
+    margin-right: 50%;
+    font-size: 14px;
+}
+
+#titulo {
+    width: 75%;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-right: 25%;
+    margin-bottom: 10%;
+
+    white-space: nowrap;
+}
+
+.right-div {
+    
+    margin-left: 12%;
+    width: 50%;
+    height: 100%;
+    gap: 6vh;
+
+}
+
+#right_title {
+    font-size: 18px;
+}
+
+#textMotivation {
+    font-size: 13px;
+}
+
+#description-project-title {
+    color: rgb(255, 255, 255);
     font-size: 16px;
-    border: 1px solid darkgrey;
-    outline: none;
+    text-align: left;
 }
-
-label {
-    margin-bottom: 8px;
-
-
-
-    display: flex;
-    align-items: start;
-
-    font-style: italic;
-    font-weight: bold;
-    font-size: 15px;
-    color: #333;
 }
-
-select {
-    width: 30%;
-    padding: 10px;
-
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    outline: none;
-    background-color: #3333332a;
-}
-
-.div-Buttao {
-    width: 100%;
-    height: 100%;
-
-
-    display: flex;
-    justify-content: center;
-}
-
-button {
-    padding: 10px;
-    width: 25%;
-    height: 23%;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #3333332a;
-    margin-top: 15px;
-}
-
-button:hover{
-    background-color: #3333331f;
-} */

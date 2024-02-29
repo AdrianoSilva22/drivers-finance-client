@@ -1,4 +1,4 @@
-import { Usuario } from "@/models/usuario"
+import { Usuario } from "@/models/driver"
 import "@/styles/usuarioCard.css"
 
 interface UsuarioCardProps {
