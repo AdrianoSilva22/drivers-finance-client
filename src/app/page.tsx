@@ -2,7 +2,7 @@
 
 import { DriverCard } from "@/components/UsuarioCard";
 import { Driver } from "@/models/driver";
-import { driverService } from "@/service/driverService";
+import { driverService } from "@/service/api/driverService";
 import '@/styles/usuarioCard.css';
 import { useEffect, useState } from "react";
 

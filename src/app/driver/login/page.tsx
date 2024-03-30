@@ -1,38 +1,16 @@
 'use client'
-import { PropertyExpressValidator } from "@/models/PropertyExpressValidator"
-import { Driver, valorInicialDriver } from "@/models/driver"
-import { mensagemErro, mensagemSucesso } from "@/models/toastr"
-import { driverService } from "@/service/driverService"
-// import { useRouter } from 'next/router'
 
+import { Driver, valorInicialDriver } from "@/models/driver"
+import { LoginService } from "@/service/serviceFunctions/driver/loginService"
 import '@/styles/login.css'
 import { useState } from "react"
 
-const { logInDriver } = driverService()
 export default function Login() {
-
     const [driver, setDriver] = useState<Driver>(valorInicialDriver)
-    // const router = useRouter();
 
+    const { loginDriver } = LoginService()
+    async function logar() { return await loginDriver(driver) }
 
-    const logar = async () => {
-        try {
-            const response = await logInDriver(driver)
-            if (response) {
-                mensagemSucesso(response.data.message)
-                // return router.push('/');
-
-            }
-        } catch (e: any) {
-            if (e.response.data.errors) {
-                console.log(e.response)
-                const arrayErrors = e.response.data.errors as PropertyExpressValidator[]
-                arrayErrors.forEach((erro) => mensagemErro(erro.msg))
-            } else {
-                mensagemErro(e.response.data)
-            }
-        }
-    }
     return (
 
         <div className="main-div">
