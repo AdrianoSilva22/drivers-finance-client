@@ -27,12 +27,10 @@ export const LoginService = () => {
             }
         } catch (e: any) {
             if (e.response.data.errors) {
-                console.log(e.response)
                 const arrayErrors = e.response.data.errors as PropertyExpressValidator[]
                 arrayErrors.forEach((erro) => mensagemErro(erro.msg))
             } else {
                 mensagemErro(e.response.data.message)
-                console.log(e)
             }
         }
     }

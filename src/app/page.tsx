@@ -17,7 +17,6 @@ export default function Home() {
         const response = await getTotalDriver()
         setDrivers(response.data)
       } catch (error) {
-        console.log(error + "deu ruim ");
 
       }
     }

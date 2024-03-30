@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
     
 export default function ola(request: NextRequest) {
-    console.log('chegou')
     const token = request.cookies.get('driverToken')?.value
     const signInURL = new URL('/driver/login', request.url)
     if (!token) {
