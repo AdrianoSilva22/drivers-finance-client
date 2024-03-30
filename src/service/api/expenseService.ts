@@ -1,5 +1,5 @@
 import { Expense } from "@/models/expense"
-import { apiService } from "./apiService"
+import { apiService } from "./api/apiService"
 
 export const expenseService = () => {
 
