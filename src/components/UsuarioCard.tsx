@@ -1,20 +1,18 @@
-import { Usuario } from "@/models/driver"
+import { Driver } from "@/models/driver"
 import "@/styles/usuarioCard.css"
 
-interface UsuarioCardProps {
-    usuario: Usuario
+interface DriverCardProps {
+    driver: Driver
 }
 
-export function UsuariooCard({ usuario }: UsuarioCardProps) {
+export function DriverCard({ driver }: DriverCardProps) {
     return (
-
         <div className="div-card-container">
             <ul>
-                <li>Nome: {usuario.nome}</li>
-                <li>Email: {usuario.email}</li>
-                <li>Login: {usuario.login}</li>
-                <li>Senha: {usuario.senha}</li>
-                <li>Gênero: {usuario.genero}</li>
+                <li>Nome: {driver.name}</li>
+                <li>Email: {driver.email}</li>
+                <li>Cell: {driver.phone_number}</li>
+                <li>Gênero: {driver.genero}</li>
             </ul>
         </div>
     )
