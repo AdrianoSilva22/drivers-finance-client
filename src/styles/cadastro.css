@@ -63,12 +63,13 @@
     align-items: center;
     padding: 3%;
     width: 50%;
-    height: 100%;
+    height: 86%;
     border-radius: 5px;
     box-sizing: border-box;
 
     background-color: rgb(32, 32, 36);
 }
+
 
 .left-div input {
 
@@ -99,6 +100,10 @@
     cursor: pointer;
 }
 
+.left-div button:hover{
+    background-color: rgba(130, 87, 229, 0.582);
+}
+
 .left-div select {
     width: 75.6%;
     height: 8%;
@@ -116,10 +121,11 @@
     align-items: left;
     margin-left: 12%;
     width: 50%;
-    height: 100%;
+    height: 90%;
     gap: 6vh;
 
 }
+
 
 @media (max-width: 768px) {
     .secondary-div {

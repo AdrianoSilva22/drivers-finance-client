@@ -1,24 +1,25 @@
 body {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
     border: 1px solid blue;
 }
 
-.div-card-container {
+ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 60vh;
+    flex-direction: column;
+    /* height: 100%;
+    width: 100%; */
     border: 1px solid darkgray;
 }
 
 li {
+    margin: 0;
+   
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border: 1px solid black;
-    width: 100%;
-    list-style-type: none
+    height: 10vh;
 }
