@@ -3,7 +3,7 @@
 import { PropertyExpressValidator } from '@/models/PropertyExpressValidator'
 import { Driver, valorInicialDriver } from '@/models/driver'
 import { mensagemErro, mensagemSucesso } from '@/models/toastr'
-import { driverService } from '@/service/driverService'
+import { driverService } from '@/service/api/driverService'
 import '@/styles/cadastro.css'
 import { useState } from "react"
 
@@ -13,7 +13,6 @@ export default function Cadastro() {
   const { registerDriver } = driverService()
 
   const cadastrar = async () => {
-
     try {
       await registerDriver(driver)
       setDriver(valorInicialDriver)
@@ -106,4 +105,3 @@ export default function Cadastro() {
     </div>
   )
 }
-
